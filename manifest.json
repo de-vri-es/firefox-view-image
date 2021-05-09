@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "view-image",
+	"version": "0.1",
+	"description": "Minimal open source add-on to restore the \"View image\" context menu item.",
+	"developer": {
+		"name": "Maarten de Vries",
+		"url": "https://github.com/de-vri-es/firefox-view-image"
+	},
+
+
+	"background": {
+		"scripts": ["view_image.js"]
+	},
+
+	"permissions": ["menus"]
+}
