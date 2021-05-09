@@ -8,10 +8,9 @@
 		"url": "https://github.com/de-vri-es/firefox-view-image"
 	},
 
-
+	"permissions": ["menus"],
+	"default_locale": "en",
 	"background": {
 		"scripts": ["view_image.js"]
-	},
-
-	"permissions": ["menus"]
+	}
 }

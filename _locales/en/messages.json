@@ -1,0 +1,6 @@
+{
+	"view-image": {
+		"message": "View i&mage",
+		"description": "The title of the context menu item to view an image. Should include an & for the access key."
+	}
+}

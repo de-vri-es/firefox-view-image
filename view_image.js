@@ -1,8 +1,14 @@
-const view_image_id = browser.menus.create({title: "&View image", contexts: ["image"]}, () => {
-	if (browser.runtime.lastError) {
-		console.error("Failed to create \"View image\" context menu item:", browser.runtime.lastError.message);
+const view_image_id = browser.menus.create(
+	{
+		title: browser.i18n.getMessage("view-image"),
+		contexts: ["image"],
+	},
+	() => {
+		if (browser.runtime.lastError) {
+			console.error("Failed to create \"View image\" context menu item:", browser.runtime.lastError.message);
+		}
 	}
-});
+);
 
 browser.menus.onClicked.addListener(async (info, tab) => {
 	if (info.menuItemId == view_image_id) {
